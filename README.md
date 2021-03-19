@@ -5,4 +5,4 @@
 3. function called theFinalScore()
 4. function called getUser()
 5. i use loops(while,for)
-6. 
+6. i also make some changes on css page to make the design of the page looking better :)
