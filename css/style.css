@@ -1,20 +1,79 @@
-p {
-  text-align: center;
-  color: white;
-  border: 5px solid lightblue;
-  font-size: 30px;
-  
-  }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  }
-body{
-    background-color:black;
+html{
+
+    /* background: url(/img/pp21.jpg);   */
+    background: url(https://wallpaperaccess.com/full/309166.jpg);
+
 }
-img {
-    border-radius: 8px;
+img{
+  border-radius: 50%;
+  float: left;
+  left: 16px;
+  width: 260px;
+  margin-left: 100px;
+  
+  
+  
+}
+#header1{
+  text-align: center;
+  
+}
+main{
+  font-family: 'Indie Flower', cursive;
+  
+
+}
+
+#ex1{
+  color: lightseagreen;
+  font-size: 30px;
+}
+#ex2{
+  color:lightsalmon;
+  font-size: 30px;
+
+}
+a{
+  display: inline;
+  float: left;
+}
+#nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+nav a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+h1{
+  font-size: 100px;
+  color:white; 
+  background-color: lightseagreen;  
+  border-radius: 35px;
+  padding:10px;
+
+ 
+}
+.column {
+  float: left;
+  width: 40%;
+  padding: 15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+  font-size:30px;
+  color: aliceblue;
+  text-align: center;
 }
