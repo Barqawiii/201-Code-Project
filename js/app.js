@@ -12,7 +12,7 @@ function theFinalScore() {
 }
 
 function getUser() {
-  let yourName = prompt('what is your name?  ');
+  let yourName = prompt('Hello , what is your name?  ');
   alert('Welcome ' + yourName + ' :D');
   alert('let\'s see if you know me :P');
   alert('you must enter yes or no ');
@@ -22,7 +22,7 @@ getUser();
 
 
 let q1 = prompt('Am I a person who loves soccer games ?');
-if (q1.toLowerCase() === ('yes' || 'y')) {
+if (q1.toLowerCase() === 'yes' || q1.toLowerCase() ==='y') {
   correct();
 } else {
   inCorrect();
@@ -30,28 +30,28 @@ if (q1.toLowerCase() === ('yes' || 'y')) {
 }
 
 let q2 = prompt('Am I a person who wears glasses?');
-if (q2.toLowerCase() === ('no' || 'n')) {
+if (q2.toLowerCase() === 'no' || q2.toLowerCase() ==='n') {
   correct();
 } else {
   inCorrect();
 }
 
 let q3 = prompt('Am I a smoker person?');
-if (q3.toLowerCase() === ('yes' || 'y')) {
+if (q3.toLowerCase() === 'yes' || q3.toLowerCase() === 'y') {
   correct();
 } else {
   inCorrect();
 }
 
 let q4 = prompt('Am I social person ?');
-if (q4.toLowerCase() === ('yes' || 'y')) {
+if (q4.toLowerCase() === 'yes' || q4.toLowerCase() === 'y') {
   correct();
 } else {
   inCorrect();
 }
 
 let q5 = prompt('Am I nervous person ?');
-if (q5.toLowerCase() === ('no' || 'n')) {
+if (q5.toLowerCase() === 'no' || q5.toLowerCase() === 'n') {
   correct();
 } else {
   inCorrect();
@@ -79,30 +79,31 @@ function q6() {
 q6();
 
 function q7() {
-  let myFood = ['shawarma', 'zinger', 'burger'];
+  let myFood = ['shawarma', 'zinger', 'burger','pizza','suchi'];
+  let cor=false;
+  let attempts=myFood.length;
+  for (let i=1;i<=6;i++ ) {
+    let food = prompt('you should guess one of the junk food that I prefer?');
 
-  let attempts2 = 6;
-  while (attempts2 > 0) {
-    let food = prompt('you should guess what food do I prefer?');
-    if (food === myFood[0]) {
-      alert('correct answer ! :D');
-      finalScore++;
-      break;
-    } else if (food === myFood[1]) {
-      alert('correct answer ! :D');
-      finalScore++;
-      break;
-    } else if (food === myFood[2]) {
-      alert('correct answer ! :D');
-      finalScore++;
-      break;
+    for(let i=0;i<myFood.length;i++){
+      if (food ===myFood[i]){
+        cor =true;
+        break;
+      }
+
     }
-    attempts2--;
-    alert('you still have ' + attempts2 + ' left');
+    if(cor){
+      alert('correct answer ! :D');
+      finalScore++;
+      alert('The junk food that I prefer : ' + myFood);
+      break;
+    }else if(cor===false){
+      attempts--;
+      alert('you still have ' + attempts + ' left');
+    }
   }
-  alert('the correct answer is ' + myFood);
 }
+
 q7();
 
 theFinalScore();
-
