@@ -81,8 +81,8 @@ q6();
 function q7() {
   let myFood = ['shawarma', 'zinger', 'burger','pizza','suchi'];
   let cor=false;
-  let attempts=myFood.length;
-  for (let i=1;i<=6;i++ ) {
+  let attempts=myFood.length+1;
+  for (let i=1;i<=5;i++ ) {
     let food = prompt('you should guess one of the junk food that I prefer?');
 
     for(let i=0;i<myFood.length;i++){
